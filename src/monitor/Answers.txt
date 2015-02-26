@@ -1,0 +1,4 @@
+1. Passing the length of the message is useless
+in this particular case since the length of
+the message is a fixed value. The length won't vary from 
+patient to patient.

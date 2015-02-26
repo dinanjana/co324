@@ -1,0 +1,29 @@
+E/11/133
+
+Answers
+
+Exercise 3:
+
+Non-Recoverable : Creating a Datagram packet   DatagramSocket( port )
+       	          Creating a Datagram socket   DatagramPacket( new byte[packetsize], packetsize )
+
+Recoverable     : Packet recieving             socket.receive( packet )
+		  Extracting data and address 
+		  from packets
+		  Sending a packet             socket.send( packet )
+
+
+Exercise 4
+
+No it's not.If it is not handled corectly it wil lead to 
+server offline because it will cause to skip 'for' loop.
+
+
+Exercise 5
+
+If an error occured program will stop without
+closing the socket.If it kept open other programs 
+won't be able to connect to that socket.Finally 
+block executes always.So if the action
+required to close a socket placed on that block,
+socket will close after the end of a session always.
