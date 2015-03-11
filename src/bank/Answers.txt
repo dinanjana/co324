@@ -17,10 +17,16 @@
 
 
 
-2. b)
+2. b) No starvation.
 
 
    c) Yes.Deadlock is present.Lets say we have 2 object A and B
       A dedadlock can occur if A tries to give money to B at the 
-      same time B tries to give money to A.
-      money to A
+      same time B tries to give money to A. This is due to the 
+      locks we impose on both objects. 
+
+
+      We can avoid the deadlock by putting both deposit method
+      call into same syrnchronized lock.But this may make the process
+      sequential. 
+      

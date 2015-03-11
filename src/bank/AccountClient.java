@@ -15,8 +15,8 @@ public class AccountClient {
 		try (Socket socket = new Socket(address, AccountServer.PORT);
 				PrintStream sout = new PrintStream(socket.getOutputStream() )) {
 			
-			int fromID = Integer.parseInt(args[0]),
-				toID = Integer.parseInt(args[1]);
+			int fromID = 0,//Integer.parseInt(args[0]),
+				toID = 1;//Integer.parseInt(args[1]);
 			
 			for (int i=0; i<1000; i++) 
 			try {

@@ -1,0 +1,14 @@
+1) If we stop using a delimiter, server 
+   will not read untill it reaches the 
+   end of an incoming message.In this case
+   the message will only be displayed in
+   server after stopping the execution of
+   the client programme.
+
+   If the user accidently put "-" client 
+   will consider that character as the 
+   delimiter and will break the packet
+   from that point
+
+2) i) "\n",space characters will be taken as
+      a delimiter.	

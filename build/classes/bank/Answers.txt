@@ -1,0 +1,32 @@
+1. a) Yes data race is present in the Account class.The shared 
+      resource, "balance" can be updated by several threads 
+      simaltenously prompting to undefinete states.
+
+   b) In deposit method "balance" will be updated.Few threads can 
+      access balance of the same object simaltenously. So those updates
+      can lead to undetermined states.For an example,An update done
+      by a one thread can be lost to another thread.
+
+
+   c) Id number should be identical.If 2 objects of Accounts class
+      created at same time by 2 different threads,the id numbers of
+      these accounts can be in faulty.
+
+   d) deposit()
+      transfer()
+
+
+
+2. b) No starvation.
+
+
+   c) Yes.Deadlock is present.Lets say we have 2 object A and B
+      A dedadlock can occur if A tries to give money to B at the 
+      same time B tries to give money to A. This is due to the 
+      locks we impose on both objects. 
+
+
+      We can avoid the deadlock by putting both deposit method
+      call into same syrnchronized lock.But this may make the process
+      sequential. 
+      
