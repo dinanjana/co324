@@ -17,6 +17,7 @@ public class FanController extends Thread {
         enum FanState{
         
         OFF{
+            @Override
             FanState eval(String cmd){
             
                 switch (cmd) {

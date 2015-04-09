@@ -1,0 +1,19 @@
+<web-app>
+
+<!-- Complete this-->
+
+	<servelet>
+		<servelet-name>VotingServer</servelet-name>
+		<servelet-class>votes.VotingServer</servelet-class>
+	
+	</servelet>
+
+	<servelet-mapping>
+		<servelet-name>VotingServer</servelet-name>
+		<url-pattern>/blue</url-pattern>
+		<url-pattern>/red</url-pattern>
+
+	</servelet-mapping>
+
+
+</web-app>
